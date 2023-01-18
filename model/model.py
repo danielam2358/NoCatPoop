@@ -56,7 +56,7 @@ class Model:
             for i in indices.flatten():
                 (x, y) = (boxes[i][0], boxes[i][1])
                 (w, h) = (boxes[i][2], boxes[i][3])
-                color = [int(c) for c in self._colors[classIDs[i]]]
+                color = [int(c) for c in self._colors[class_ids[i]]]
                 cv.rectangle(image, (x, y), (x + w, y + h), color, 2)
                 detection = Detection(
                     box=boxes[i],
@@ -76,7 +76,7 @@ class Model:
             (w, h) = (detection.box[2], detection.box[3])
             color = [int(c) for c in self._colors[detection.class_id]]
             cv.rectangle(image, (x, y), (x + w, y + h), color, 2)
-            text = "{}: {:.4f}".format(detection.class_name, detection.confidences)
+            text = "{}: {:.4f}".format(detection.class_name, detection.confidence)
             cv.putText(image, text, (x, y - 5), cv.FONT_HERSHEY_SIMPLEX, 0.5, color, 1)
 
         return image
