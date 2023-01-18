@@ -1,0 +1,6 @@
+python-telegram-bot # https://github.com/python-telegram-bot/python-telegram-bot
+pyyaml
+opencv-python
+opencv-python-headless
+matplotlib
+numpy
