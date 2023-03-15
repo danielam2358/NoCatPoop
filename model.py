@@ -86,5 +86,5 @@ class Model:
         image = image.copy()
 
         datetime_str = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-        cv.putText(image, datetime_str, (30, 30), cv.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
+        cv.putText(image, datetime_str, (30, 30), cv.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
         return image
