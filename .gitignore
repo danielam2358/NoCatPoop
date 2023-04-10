@@ -4,3 +4,4 @@ __pycache__/
 .idea
 yolo/yolov3.weights
 outputs
+scripts

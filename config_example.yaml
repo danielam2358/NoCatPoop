@@ -1,0 +1,16 @@
+camera:
+  ip: 65.51.95.26
+  user_name: admin
+  password: HETJHIIH
+  url_template: rtsp://{user_name}:{password}@{ip}:554
+  use_pc_camera: False
+  pc_camera_channel: 0
+
+telegram:
+  api_token: 4168165100:THETHJETOHJETBOEBHET
+  chat_id: -852564481
+
+model:
+  weights_file_path: yolo/yolov3.weights
+  config_file_path: yolo/yolov3.cfg
+  classes_file_path: yolo/coco.names
